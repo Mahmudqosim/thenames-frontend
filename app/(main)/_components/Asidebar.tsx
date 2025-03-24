@@ -52,7 +52,7 @@ const Asidebar = () => {
   const items = [
     {
       title: "Home",
-      url: "/dashboard",
+      url: "/editor",
       icon: Home,
     },
     {

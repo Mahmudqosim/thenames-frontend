@@ -51,7 +51,7 @@ const VerifyMfa = () => {
     };
     mutate(data, {
       onSuccess: (response) => {
-        router.replace("/dashboard");
+        router.replace("/editor");
         toast({
           title: "Success",
           description: response?.data?.message,

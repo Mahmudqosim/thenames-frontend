@@ -23,7 +23,7 @@ API.interceptors.response.use(
         await APIRefresh.get("/auth/refresh");
         return APIRefresh(error.config);
       } catch (error) {
-        window.location.href = "/";
+        // window.location.href = "/";
       }
     }
     return Promise.reject({

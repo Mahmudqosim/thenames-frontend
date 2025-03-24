@@ -45,7 +45,7 @@ export default function Login() {
           router.replace(`/verify-mfa?email=${values.email}`)
           return
         }
-        router.replace(`/dashboard`)
+        router.replace(`/editor`)
       },
       onError: (error) => {
         toast({
