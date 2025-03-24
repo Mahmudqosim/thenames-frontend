@@ -61,7 +61,7 @@ const PortfolioGenerationForm = ({ onGeneration }: PortfolioGenerationFormProps)
     remove: removeSkill 
   } = useFieldArray({
     control,
-    name: "skills"
+    name: "skills" as any
   });
 
   const { 
@@ -80,12 +80,12 @@ const PortfolioGenerationForm = ({ onGeneration }: PortfolioGenerationFormProps)
     remove: removeTechnology
   } = useFieldArray({
     control,
-    name: `projects.${projectIndex}.technologies`
+    name: `projects.${projectIndex}.technologies` as any
   });
 
   const addTechnology = () => {
     if (newTechnology.trim()) {
-      appendTechnology(newTechnology.trim());
+      appendTechnology(newTechnology.trim() as any);
       setNewTechnology("");
     }
   };
